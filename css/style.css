@@ -1,11 +1,12 @@
 html {
-    background-image: linear-gradient(45deg, rgb(80, 20, 192), white);
+    background-image: linear-gradient(45deg, rgb(80, 20, 192, 0.95), rgb(243, 235, 235, 0.75)), url('../images/developer.jpg');
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover;
 }
 
 .heading {
@@ -106,7 +107,7 @@ html {
 
 .second h1 {
     text-align: center;
-    font-size: 80px;
+    font-size: 50px;
     color: black;
     font-weight: 1000;
 }
@@ -154,7 +155,35 @@ html {
 
 .skill-heading {
     text-align: center;
-    font-size: 80px;
+    font-size: 50px;
     color: black;
     font-weight: 1000;
+}
+
+.schools {
+    margin: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 50px;
+    height: 50vh;
+}
+
+.certificates-heading {
+    text-align: center;
+    font-size: 50px;
+    color: black;
+    font-weight: 1000;
+}
+
+.school a {
+    text-decoration: none;
+    float: right;
+    color: rgb(236, 137, 8);
+    overflow: hidden;
+    border-radius: 10px;
+    display: block;
+    padding: 14px 16px;
+    text-align: center;
+    font-size: 30px;
 }
