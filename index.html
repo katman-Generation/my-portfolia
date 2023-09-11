@@ -5,23 +5,27 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="https://fonts.googleapis.com/css?family=Anton%7CBaskervville%7CRaleway&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
-        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" media="screen and (min-width: 601px)" href="./css/style.css">
+        <link rel="stylesheet" media="screen and (max-width: 600px)" href="./css/pstyle.css">
         <title>Tatenda Katema</title>
     </head>
     <body>
         <main>
             <section class="heading">
                 <header class="header">
-                    <nav class="navigation">  
-                        <a href="#about">About</a>
-                        <a href="#skills">Skills</a>
-                        <a href="#schools">Certificate</a>
+                    <nav class="navigation">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> 
                         <a href="#contact">Contacts</a>
+                        <a href="#schools">Certificate</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#about">About</a>
                     </nav>
+                    <span onclick="openNav()">open</span>
                 </header>
                 <h1 class="title">Tatenda's</h1>
                 <h2>Portfolio</h2>
-                <p>welcome to the world of Katman!!!!! <br> a passionate software  and full stack web developer.</p>
+                <p>welcome to the world of Katman!!!!! <br> A passionate software  and full stack web developer.</p>
             </section>
             <!--about section-->
             <div id="about" class="first">
@@ -121,20 +125,32 @@
                 </div>
             </div>
             <!--contact section-->
-            <div id="contact" class="social-icons">
-                <a href="https://www.facebook.com/tatendabezel.katema">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="https://twitter.com/katematatenda">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="https://github.com/katman-Generation">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/katman-generation/">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
+            <div id="contact" class="contact">
+                <div class="contact-info">
+                    <form>
+                        <input id="name" name="name" type="text" required />
+                        <input id="email" name="email" type=" email" required />
+                        <textarea id="msg" name="msg" type="text" required >message....</textarea>
+                        <input type="submit" value="Submit" />
+                    </form>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/tatendabezel.katema">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://twitter.com/katematatenda">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://github.com/katman-Generation">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/katman-generation/">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                
             </div>
+            <script src="index.js"></script>
         </main>
     </body>
 </html>
