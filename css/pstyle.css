@@ -1,6 +1,6 @@
 @media only screen and (max-width: 600px) {
     body {
-        background-color: aquamarine;
+        background-color: rgb(7, 10, 180);
     }
     .heading {
         height: 100vh;
@@ -14,10 +14,11 @@
         z-index: 1; 
         top: 0; 
         left: 0;
-        background-color: #111; 
+        background-color: #ca0a0a; 
         overflow-x: hidden; 
         padding-top: 15px; 
         transition: 0.5s;
+        position: fixed;
     }
 
 /* The navigation menu links */
@@ -50,12 +51,14 @@
         padding-bottom: 0px;
         margin-bottom: 0px;
         text-align: center;
+        color: #c7ca0a;
     }
     .heading h2 {
         font-size: 70px;
         margin-top: 0px;
         padding-top: 0px;
         text-align: center;
+        color: #c7ca0a;
     }
     .heading p {
         font-size: 50px;
@@ -65,6 +68,7 @@
         margin-left: 20px;
         margin-left: 20px;
         height: 60%;
+        color: #c7ca0a;
     }
     .first {
         display: inline-block;
@@ -73,6 +77,7 @@
         height: 100%;
         margin-top: 10px;
         padding-top: 50px;
+        color: #c7ca0a;
     }
     .image1 {
         text-align: center;
@@ -88,6 +93,7 @@
     .about-info h1 {
         font-size: 60px;
         font-weight: 1000;
+        color: #c7ca0a;
     }
 
     .about-info p {
@@ -101,6 +107,7 @@
     .about-info h1 {
         font-size: 60px;
         font-weight: 1000;
+        color: #c7ca0a;
     }
 
     .about-info p {
@@ -118,6 +125,7 @@
         font-size: 50px;
         color: black;
         font-weight: 1000;
+        color: #c7ca0a;
     }
 
     .project {
@@ -136,6 +144,7 @@
         margin: 20px;
         font-size: 30px;
         width: 110px;
+        color: #c7ca0a;
     }
 
     .project p {
@@ -159,6 +168,7 @@
         flex-wrap: wrap;
         margin: 50px;
         height: 50vh;
+        color: #c7ca0a;
     }
 
     .skill-heading {
@@ -166,12 +176,14 @@
         font-size: 50px;
         color: black;
         font-weight: 1000;
+        color: #c7ca0a;
     }
 
     .schools {
         margin: 30px;
         display: inline-block;
         height: 50vh;
+        color: #c7ca0a;
     }
 
     .certificates-heading {
@@ -179,13 +191,14 @@
         font-size: 50px;
         color: black;
         font-weight: 1000;
+        color: #c7ca0a;
     }
 
     .school a {
         text-decoration: none;
         color: rgb(236, 137, 8);
         border-radius: 10px;
-        float: right;
+        overflow: hidden;
         display: block;
         padding: 14px 16px;
         text-align: center;
