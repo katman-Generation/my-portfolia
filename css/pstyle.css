@@ -14,7 +14,7 @@
         z-index: 1; 
         top: 0; 
         left: 0;
-        background-color: #ca0a0a; 
+        background-color: #0ac041; 
         overflow-x: hidden; 
         padding-top: 15px; 
         transition: 0.5s;
@@ -29,6 +29,7 @@
         color: #818181;
         display: block;
         transition: 0.3s;
+        
     }
 
 /* When you mouse over the navigation links, change their color */
@@ -44,7 +45,7 @@
         font-size: 36px;
         margin-left: 50px;
     }
-
+/* the rest of the styling */
     .heading h1 {
         font-weight: 100px;
         font-size: 70px;

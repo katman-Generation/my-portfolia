@@ -6,6 +6,8 @@ function openNavigation() {
 function closeNavigation() {
   document.getElementById("mySidenav").style.width = "0";
 }
+
+
 function submitForm(){
   const name = document.getElementById("name");
   const email = document.getElementById("email")
