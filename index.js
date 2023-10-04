@@ -1,3 +1,4 @@
+
 function openNavigation() {
   document.getElementById("mySidenav").style.width = "100%";
 }
@@ -7,15 +8,33 @@ function closeNavigation() {
   document.getElementById("mySidenav").style.width = "0";
 }
 
+import { createConnection } from 'mysql';
 
 function submitForm(){
   const name = document.getElementById("name");
   const email = document.getElementById("email")
   const msg = document.getElementById("msg")
+  const form = {name, email, msg}
 
+  /* connecting to the data  base*/
+  const db = createConnection({
+    host  : 'localhost',
+    
+    database  : 'sys'
+  })
+
+  db.connect(err => {
+    if (err) throw err 
+    console.log('MYSQL database connected successfully!')
+  })
+
+  db.query('INSERT INTO portfolioForm SET ?', form, (err, output) => {
+    if (err) throw err
+    res.send('data saved')
+  })
 
   // This variable stores all the data.
-  let data = 
+  /*let data = 
   '\r Name: ' + name.value + ' \r\n ' + 
   'Email: ' + email.value + ' \r\n ' + 
   'Message: ' + msg.value;
@@ -38,5 +57,5 @@ function submitForm(){
   }
 
   newLink.click(); 
-  
+*/ 
 }
