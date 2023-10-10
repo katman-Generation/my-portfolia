@@ -23,7 +23,7 @@
         width: 100%;
         position: fixed;
     }
-    .heading span {
+    .heading button {
         display: none;
     }
     .navigation .closebtn {
