@@ -95,11 +95,13 @@
         font-size: 60px;
         font-weight: 1000;
         color: #c7ca0a;
+        text-align: center;
     }
 
     .about-info p {
         color: #ffffff;
         font-size: 30px;
+        text-align: center;
     }
     .about-info {
         margin: 10px;
