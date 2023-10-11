@@ -1,12 +1,12 @@
 const fs = require ('fs')
 
 function openNavigation() {
-  document.getElementById("mySidenav").style.width = "100%";
+  document.getElementById("pmySidenav").style.width = "100%";
 }
 
 /* Close/hide the sidenav */
 function closeNavigation() {
-  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("pmySidenav").style.width = "0";
 }
 
 function submitForm(){

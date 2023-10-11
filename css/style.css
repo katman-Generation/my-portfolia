@@ -10,27 +10,26 @@
         background-attachment: fixed;
         background-size: cover;
     }
-
+    .pnavigation{
+        display: none;
+    }
     .heading {
         width: 100vw;
         height: 100vh;
         overflow-x: hidden;
     }
 
-    .navigation {
-        padding-top: 20px;
-        margin-top: 10px;
+    .dnavigation {
+        padding-top: 0px;
+        margin-top: 0px;
         width: 100%;
         position: fixed;
     }
     .heading button {
         display: none;
     }
-    .navigation .closebtn {
-        display: none;
-    }
 
-    .navigation a {
+    .dnavigation a {
         text-decoration: none;
         width: 10%;
         float: right;
@@ -43,7 +42,7 @@
         font-size: 30px;
     }
 
-    .navigation a:hover {
+    .dnavigation a:hover {
         color: rgb(26, 126, 13);
     }
 

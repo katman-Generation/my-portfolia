@@ -13,13 +13,20 @@
         <main>
             <section class="heading">
                 <header class="header">
-                    <nav id="mySidenav" class="navigation">
-                        <a href="javascript:void(0)" class="closebtn" onclick="closeNavigation()">&times;</a> 
+                     <nav id="dmySidenav" class="dnavigation">
                         <a href="#contact">Contacts</a>
                         <a href="#certificates">Certificate</a>
                         <a href="#skills">Skills</a>
                         <a href="#projects">Projects</a>
                         <a href="#about">About</a>
+                    </nav>
+                    <nav id="pmySidenav" class="pnavigation">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNavigation()">&times;</a> 
+                        <a href="#contact" onclick="closeNavigation()">Contacts</a>
+                        <a href="#certificates" onclick="closeNavigation()">Certificate</a>
+                        <a href="#skills" onclick="closeNavigation()">Skills</a>
+                        <a href="#projects" onclick="closeNavigation()">Projects</a>
+                        <a href="#about" onclick="closeNavigation()">About</a>
                     </nav>
                     <button onclick="openNavigation()">nav</button>
                 </header>
