@@ -9,6 +9,13 @@
     .dnavigation {
         display: none;
     }
+    .heading button {
+        margin-top: 20px;
+        width: 10%;
+        position: fixed;
+        background-color: green;
+        top: 0;
+    }
     /* The side navigation menu */
     .pnavigation {
         height: 100%; 
@@ -82,6 +89,7 @@
         margin-top: 10px;
         padding-top: 50px;
         color: #c7ca0a;
+        text-align: center;
     }
     .image1 {
         text-align: center;
@@ -92,6 +100,7 @@
     }
     .about-info {
         margin: 10px;
+        text-align: center;
     }
 
     .about-info h1 {
