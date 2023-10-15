@@ -10,6 +10,9 @@
         background-attachment: fixed;
         background-size: cover;
     }
+    div {
+        display: block;
+    }
     .pnavigation{
         display: none;
     }
