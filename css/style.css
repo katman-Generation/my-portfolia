@@ -12,6 +12,7 @@
     }
     div {
         display: block;
+        overflow: hidden;
     }
     .pnavigation{
         display: none;

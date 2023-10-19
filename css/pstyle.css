@@ -1,6 +1,12 @@
 @media only screen and (max-width: 600px) {
     body {
-        background-color: rgb(7, 10, 180);
+        background-image: url(../images/background.jpg);
+    	background-size: ceneter;
+    	overflow-x: hidden;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
     }
     .heading {
         height: 100vh;
