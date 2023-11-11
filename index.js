@@ -1,4 +1,4 @@
-const fs = require ('fs')
+
 
 function openNavigation() {
   document.getElementById("pmySidenav").style.width = "100%";
@@ -18,3 +18,13 @@ function submitForm(){
 
   fs.appendFile('./formdata.txt', data.toString());
 };
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzWPJEl368dCmUZriTMcEk9CqGr2qRrDGj_KXiZjappCUWDb1BRPEOFg12QApllsbr8WQ/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
