@@ -153,8 +153,8 @@
                 <div class="contact-info">
                     <form name="submit-to-google-sheet">
                         <h3>send me message</h3>
-                        <input name="name" id="name" placeholder="name" type="text" required />
-                        <input name="email" id="email" placeholder="email" type="email" required />
+                        <input name="name" id="name" autocomplete="off" placeholder="name" type="text" required />
+                        <input name="email" id="email" autocomplete="off" placeholder="email" type="email" required />
                         <textarea name="message" id="msg" name="msg" type="text" required placeholder="message......" autocomplete="off"></textarea>
                         <input type="submit" value="Submit" />
                     </form>
@@ -183,6 +183,15 @@
                 
             </div>
             <script src="./index.js" >
+                const scriptURL = 'https://script.google.com/macros/s/AKfycbxSi0WlbrCzMbKcnUApw7Q80c2OvjQ4MWMFGHFAwHrpWLRvSk6dio20CZfDBawf-jI1/exec'
+                const form = document.forms['submit-to-google-sheet']
+
+                form.addEventListener('submit', e => {
+                    e.preventDefault()
+                    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                    .then(response => console.log('Success!', response))
+                    .catch(error => console.error('Error!', error.message))
+                })
             </script>
         </main>
     </body>
