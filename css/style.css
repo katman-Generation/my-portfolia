@@ -91,8 +91,7 @@
 
     .image1 {
         margin: 1vw;
-        text-align: center;
-        border-radius: 80%;
+        border-radius: 30%;
     }
 
     .about-info {
@@ -111,12 +110,11 @@
 
     .second {
         display: flex;
-        flex-direction: column;
         justify-content: space-around;
         width: 100vw;
     }
 
-    .second h1 {
+    .second-h1 {
         text-align: center;
         font-size: 2vw;
         color: black;
@@ -124,9 +122,8 @@
     }
 
     .project {
-        margin: 2vw;
-        display: flex;
-        justify-content: space-around;
+        margin: 1vw;
+        flex: 1 1 0px;
     }
 
     .project img {
@@ -143,7 +140,7 @@
     .project p {
         margin: 2vw;
         color: #ffffff;
-        font-size: 2vw;
+        font-size: 1vw;
     }
 
     .project a {
