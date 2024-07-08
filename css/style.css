@@ -19,7 +19,7 @@
     }
     .heading {
         width: 100vw;
-        height: 50vh;
+        height: 30vh;
         overflow-x: hidden;
     }
 
@@ -85,17 +85,24 @@
     .first {
         display: flex;
         justify-content: space-around;
-        width: 100vw;
-        height: 80vh;
+        width: 80vw;
+        flex-wrap: wrap;
+        border: red 2px solid;
     }
-
-    .image1 {
-        margin: 1vw;
-        border-radius: 30%;
+    .com{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 30vw;
+        height: 50vh;
+        border-top-right-radius: 10px;
+        align-items: center;
+        box-shadow: 0 14px 26px rgba(0, 0, 0, 0, 0.04);
     }
 
     .about-info {
         margin: 1vw;
+        border: red solid 2px;
     }
 
     .about-info h1 {
@@ -157,7 +164,8 @@
         justify-content: space-around;
         flex-wrap: wrap;
         margin: 2vw;
-        height: 50vh;
+        height: 20vh;
+        flex-direction: column;
     }
 
     .skill-heading {
@@ -165,6 +173,9 @@
         font-size: 1.5vw;
         color: black;
         font-weight: 5vw;
+    }
+    .skill h2{
+        font-size: 0.8vw;
     }
 
     .schools {
@@ -196,70 +207,5 @@
         text-align: center;
         font-size: 1.5vw;
     }
-
-    .social-icons {
-        font-size: 3rem;
-        float: right;
-        margin-bottom: 2vw;
-        padding-bottom: 0%;
-        display: flex;
-        flex-direction: row;
-        
-    }
-
-    .social-icons a {
-        margin: 2vw;
-        padding: 2vw;
-        margin: auto;
-    }
-
-    textarea {
-        margin: 1.5vw;
-        padding: -2vw;
-        width: 100%;
-        height: 8vw;
-    }
-    input {
-        display: block;
-        width: 80%;
-        height: 2vw;
-        margin: 1.5vw;
-        padding: -2vw;
-        border-radius: 10%;
-    }
-    h3{
-        margin: 1.5vw;
-        padding: -2.5vw;
-        color: rgb(236, 137, 8);
-        font-size: 2vw;
-    }
-    .button{
-        border-radius: 50%;
-        background-color: #000099;
-        width: 8vw;
-        height: 2vw;
-        margin: 2vw;
-        padding: -50px;
-        border-radius: 60%;
-        color: #ffffff;
-        object-position: center;
-    }
-
-    .contact {
-        display: flex;
-        justify-content: space-around;
-        margin-top: 0%;
-        padding: 0%;
-        
-    }
-    .contact-info {
-        display: flex;
-        justify-content: space-around;
-        margin: 50px;
-        padding: 20px;
-        width: 40%;
-    }
-    
-    
 
 }

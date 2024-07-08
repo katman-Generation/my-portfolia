@@ -33,12 +33,11 @@
                 </header>
                 <h1 class="title">Tatenda's</h1>
                 <h2>Portfolio</h2>
-                <p>welcome to the world of Katman!!!!! <br> A passionate software  and full stack web developer.</p>
+                <p>A passionate software  and full stack web developer.</p>
             </section>
             <!--about section-->
             <div id="about" class="first">
-                <img alt="an image of Tatenda" src="./images/tt.jpg" class="image1"/>
-                <div class="about-info" >
+                <div class="about-info com" >
                     <h1>About Tatenda</h1>
                     <p>Hello there! I am a passionate and dedicated software and web developer,
                         driven by the desire to create innovative and user-friendly digital solutions.
@@ -52,7 +51,27 @@
                         The ability to disrupt industries, create opportunities and change people's lives allured and kept motivating me.
                     </p>
                 </div>
-                <img  alt="an image of Tatenda" class="image1" src="./images/tate.jpg" />
+                <!--contact info-->
+                <div id="contact" class="contact com">
+                    <div class="contact-info"></div>
+                        <button><a href="mailto:katematatenda7@gmail.com">Send Email</a></button>
+                        <button><a href="wa.me:+263785080894">Send WhatsApp</a></button>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/tatendabezel.katema">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com/katematatenda">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://github.com/katman-Generation">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/katman-generation/">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
             <!--projects section-->
             <h1 class="second-h1">Projects</h1>
@@ -127,7 +146,7 @@
                     <h2>mysql</h2>
                     <a href="https://www.mysql.com/" rel="nofollow"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40" style="max-width: 100%;"> </a>
                 </div>
-                <div>
+                <div class="skill">
                     <h2>django</h2>
                     <a href="https://www.djangoproject.com/" rel="nofollow"> <img src="https://camo.githubusercontent.com/537f66454b766b0d56da91225206ebf6d28ecff24d84668d52cf9430e02460fd/68747470733a2f2f63646e2e776f726c64766563746f726c6f676f2e636f6d2f6c6f676f732f646a616e676f2e737667" alt="django" width="40" height="40" data-canonical-src="https://cdn.worldvectorlogo.com/logos/django.svg" style="max-width: 100%;"> </a>
                 </div>
@@ -149,39 +168,7 @@
                 </div>
             </div>
             <!--contact section-->
-            <div id="contact" class="contact">
-                <div class="contact-info">
-                    <form name="submit-to-google-sheet">
-                        <h3>send me message</h3>
-                        <input name="name" id="name" autocomplete="off" placeholder="name" type="text" required />
-                        <input name="email" id="email" autocomplete="off" placeholder="email" type="email" required />
-                        <textarea name="message" id="msg" name="msg" type="text" required placeholder="message......" autocomplete="off"></textarea>
-                        <button class="button" type="submit" value="Submit">submit</button>
-                    </form>
-                    <section>
-                        <h3>phone</h3>
-                        <p>+27678883308</p>
-                        <p>+263785080894</p>
-                        <h3>Email</h3>
-                        <p>tkatema5@gmail.com</p>
-                    </section>
-                </div>
-                <div class="social-icons">
-                    <a href="https://www.facebook.com/tatendabezel.katema">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="https://twitter.com/katematatenda">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="https://github.com/katman-Generation">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/katman-generation/">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                </div>
-                
-            </div>
+            
             <script src="./index.js" >
                 const scriptURL = 'https://script.google.com/macros/s/AKfycbxSi0WlbrCzMbKcnUApw7Q80c2OvjQ4MWMFGHFAwHrpWLRvSk6dio20CZfDBawf-jI1/exec'
                 const form = document.forms['submit-to-google-sheet']
