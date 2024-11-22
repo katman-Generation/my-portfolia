@@ -1,211 +1,168 @@
-@media screen and (min-width: 601px) {
-    
-    html {
-        background-image: linear-gradient(45deg, rgb(80, 20, 192, 0.95), rgb(243, 235, 235, 0.75)), url('../images/developer.jpg');
-        width: 98vw;
-        height: 100vh;
-        overflow-x: hidden;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-    }
-    div {
-        display: block;
-        overflow: hidden;
-    }
-    .pnavigation{
-        display: none;
-    }
-    .heading {
-        width: 100vw;
-        height: 30vh;
-        overflow-x: hidden;
-    }
-
-    .dnavigation {
-        padding-top: 0px;
-        margin-top: 0px;
-        width: 100%;
-        position: fixed;
-    }
-    .heading button {
-        display: none;
-    }
-
-    .dnavigation a {
-        text-decoration: none;
-        width: 10%;
-        float: right;
-        color: rgba(213, 235, 22, 0.897);
-        overflow: hidden;
-        border-radius: 1vw;
-        display: block;
-        padding: 1vw 2vw;
-        text-align: center;
-        font-size: 1vw;
-    }
-
-    .dnavigation a:hover {
-        color: rgba(250, 252, 250, 0.822);
-    }
-
-    .heading h1 {
-        font-weight: 3vw;
-        font-size: 2vw;
-        margin-left: 2vw;
-        padding-left: 5vw;
-        padding-bottom: 0px;
-        margin-bottom: 0px;
-    }
-
-    .heading h2 {
-        font-size: 3vw;
-        margin-top: 0px;
-        padding-top: 0px;
-        margin-left: 2vw;
-        padding-left: 3vw;
-    }
-
-    .heading p {
-        background-image: linear-gradient(2700deg, rgb(223, 58, 223), white, rgb(223, 58, 223), white);
-        font-size: 2vw;
-        margin-top: 0px;
-        padding-top: 0px;
-        margin-left: 2vw;
-        padding-left: 3vh;
-        background-size: 100%;
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        -moz-text-fill-color: transparent;
-        width: 50%;
-    }
-
-    .first {
-        display: flex;
-        justify-content: space-around;
-        width: 80vw;
-        flex-wrap: wrap;
-        border: red 2px solid;
-    }
-    .com{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 30vw;
-        height: 50vh;
-        border-top-right-radius: 10px;
-        align-items: center;
-        box-shadow: 0 14px 26px rgba(0, 0, 0, 0, 0.04);
-    }
-
-    .about-info {
-        margin: 1vw;
-        border: red solid 2px;
-    }
-
-    .about-info h1 {
-        font-size: 2vw;
-        font-weight: 5vw;
-    }
-
-    .about-info p {
-        color: #ffffff;
-        font-size: 1vw;
-    }
-
-    .second {
-        display: flex;
-        justify-content: space-around;
-        width: 100vw;
-    }
-
-    .second-h1 {
-        text-align: center;
-        font-size: 2vw;
-        color: black;
-        font-weight: 3vw;
-    }
-
-    .project {
-        margin: 1vw;
-        flex: 1 1 0px;
-    }
-
-    .project img {
-        width: 15vw;
-        height: 10vw;
-        margin: 1vw;
-    }
-
-    .project h2 {
-        margin: 1vw;
-        font-size: 1.5vw;
-    }
-
-    .project p {
-        margin: 2vw;
-        color: #ffffff;
-        font-size: 1vw;
-    }
-
-    .project a {
-        text-decoration: none;
-        color: rgb(236, 137, 8);
-    }
-
-    .project a:hover {
-        color: rgb(26, 126, 13);
-    }
-
-    .skills {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        margin: 2vw;
-        height: 20vh;
-        flex-direction: column;
-    }
-
-    .skill-heading {
-        text-align: center;
-        font-size: 1.5vw;
-        color: black;
-        font-weight: 5vw;
-    }
-    .skill h2{
-        font-size: 0.8vw;
-    }
-
-    .schools {
-        margin: 3vw;
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        margin: 2vw;
-        height: 40vh;
-        margin-top: 0%;
-        padding: 0%;
-    }
-
-    .certificates-heading {
-        text-align: center;
-        font-size: 2vw;
-        color: black;
-        font-weight: 5vw;
-    }
-
-    .school a {
-        text-decoration: none;
-        float: right;
-        color: rgb(236, 137, 8);
-        overflow: hidden;
-        border-radius: 10px;
-        display: block;
-        padding: 1vw 2vw;
-        text-align: center;
-        font-size: 1.5vw;
-    }
-
+/* General Styles */
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
 }
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header */
+.header {
+    background: #282c34;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.navigation a {
+    margin: 0 15px;
+    font-size: 18px;
+    color: #f0f0f0;
+}
+
+.navigation a:hover {
+    color: #61dafb;
+}
+
+.intro h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.intro h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 1.2em;
+    color: #e0e0e0;
+}
+
+/* About Section */
+.about {
+    background-color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about-content p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 0 auto 20px;
+}
+
+/* Projects Section */
+.projects {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.project-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.project-item h3 {
+    margin-top: 10px;
+}
+
+/* Skills Section */
+.skills {
+    background-color: #f0f0f0;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.skill-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.skill-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.skill-item h3 {
+    font-size: 1.1em;
+}
+
+/* Certificates Section */
+.certificates {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.certificate-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.certificate-item img {
+    width: 100%;
+    max-width: 150px;
+    margin-bottom: 10px;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #282c34;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact-btn {
+    background-color: #61dafb;
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.contact-btn:hover {
+    background-color: #4fa3e4;
+}
+
+.social-icons i {
+    font-size: 2em;
+    color: white;
+    margin: 0 10px;
+}
+
+.social-icons a:hover {
+    color: #61dafb;
+}
+
+/* Footer */
+footer {
+    background-color: #282c34;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
